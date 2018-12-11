@@ -31,7 +31,7 @@ public class IDMEFportRange {
 	
 	/**
 	 * 
-	 * @param singlePortNum
+	 * @param singlePortNum port number to define range
 	 */
 	public IDMEFportRange(int singlePortNum) {
 		min = singlePortNum;
@@ -40,8 +40,8 @@ public class IDMEFportRange {
 	
 	/**
 	 * 
-	 * @param minPortNum
-	 * @param maxPortNum
+	 * @param minPortNum port number to define min value
+	 * @param maxPortNum port number to define max value
 	 */
 	public IDMEFportRange(int minPortNum, int maxPortNum) {
 		if (!(minPortNum < maxPortNum)) {

@@ -28,15 +28,14 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import lombok.NonNull;
-import tr.alperenp.sec.idemef.xml.utils.ConstantAttributes;
-import tr.alperenp.sec.idemef.xml.utils.ConstantElementNames;
 import tr.alperenp.sec.idmef.model.alert.support.Address;
 import tr.alperenp.sec.idmef.model.alert.support.Process;
 import tr.alperenp.sec.idmef.model.core.AdditionalData;
 import tr.alperenp.sec.idmef.model.core.Analyzer;
-import tr.alperenp.sec.idmef.model.core.Analyzer.AnalyzerBuilder;
 import tr.alperenp.sec.idmef.model.heartbeat.Heartbeat;
 import tr.alperenp.sec.idmef.model.misc.*;
+import tr.alperenp.sec.idmef.xml.utils.ConstantAttributes;
+import tr.alperenp.sec.idmef.xml.utils.ConstantElementNames;
 
 /**
  * 
@@ -140,7 +139,7 @@ public class HeartbeatxmlParser {
 	 * @return
 	 */
 	protected Analyzer parseAnalyzer(Element analyzerRoot) {
-		AnalyzerBuilder builder = Analyzer.builder();
+		tr.alperenp.sec.idmef.model.core.Analyzer.AnalyzerBuilder builder = Analyzer.builder();
 		String analyzerId = analyzerRoot.getAttribute(ConstantAttributes.ANALYZERID).trim();
 		if (!"".equals(analyzerId)) {
 			builder.analyzerid(analyzerId);

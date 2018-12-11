@@ -24,9 +24,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import lombok.NonNull;
-import tr.alperenp.sec.idemef.xml.utils.ConstantAttributes;
-import tr.alperenp.sec.idemef.xml.utils.ConstantElementNames;
-import tr.alperenp.sec.idemef.xml.utils.IDMEFxmlUtils;
 import tr.alperenp.sec.idmef.model.alert.support.Address;
 import tr.alperenp.sec.idmef.model.alert.support.Node;
 import tr.alperenp.sec.idmef.model.core.AdditionalData;
@@ -34,6 +31,9 @@ import tr.alperenp.sec.idmef.model.core.Analyzer;
 import tr.alperenp.sec.idmef.model.alert.support.Process;
 import tr.alperenp.sec.idmef.model.heartbeat.Heartbeat;
 import tr.alperenp.sec.idmef.model.misc.IDMEFTime;
+import tr.alperenp.sec.idmef.xml.utils.ConstantAttributes;
+import tr.alperenp.sec.idmef.xml.utils.ConstantElementNames;
+import tr.alperenp.sec.idmef.xml.utils.IDMEFxmlUtils;
 
 /**
  * 

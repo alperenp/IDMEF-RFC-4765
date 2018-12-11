@@ -29,7 +29,7 @@ public interface IenumIDMEF {
 	/**
 	 * returns keyword value defined in RFC 4765
 	 * 
-	 * @return
+	 * @return keyword definition from RFC 4765
 	 */
 	public String getKeyword();
 }

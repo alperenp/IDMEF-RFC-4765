@@ -40,7 +40,7 @@ public class Action {
 	/**
 	 * Action with given category
 	 * 
-	 * @param categoryStr
+	 * @param categoryStr value of {@link Action}
 	 */
 	public Action(String categoryStr) {
 		category = Category.valueOf(categoryStr);

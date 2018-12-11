@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tr.alperenp.sec.idemef.xml.utils;
+package tr.alperenp.sec.idmef.xml.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

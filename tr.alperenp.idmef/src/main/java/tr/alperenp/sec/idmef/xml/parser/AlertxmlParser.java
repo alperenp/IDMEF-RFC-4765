@@ -27,8 +27,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import tr.alperenp.sec.idemef.xml.utils.ConstantAttributes;
-import tr.alperenp.sec.idemef.xml.utils.ConstantElementNames;
 import tr.alperenp.sec.idmef.model.alert.Alert;
 import tr.alperenp.sec.idmef.model.alert.CorrelationAlert;
 import tr.alperenp.sec.idmef.model.alert.OverflowAlert;
@@ -55,6 +53,8 @@ import tr.alperenp.sec.idmef.model.core.Source;
 import tr.alperenp.sec.idmef.model.core.Target;
 import tr.alperenp.sec.idmef.model.misc.AlertIdent;
 import tr.alperenp.sec.idmef.model.misc.IDMEFportRange;
+import tr.alperenp.sec.idmef.xml.utils.ConstantAttributes;
+import tr.alperenp.sec.idmef.xml.utils.ConstantElementNames;
 
 /**
  * 
@@ -81,8 +81,8 @@ public class AlertxmlParser {
 	/**
 	 * Extracts {@link Alert} object from xml {@link Element}
 	 * 
-	 * @param alertRoot
-	 * @return
+	 * @param alertRoot root element of xml
+	 * @return {@link Alert} object defined under {@link Element}
 	 * @throws DOMException
 	 * @throws ParseException
 	 */

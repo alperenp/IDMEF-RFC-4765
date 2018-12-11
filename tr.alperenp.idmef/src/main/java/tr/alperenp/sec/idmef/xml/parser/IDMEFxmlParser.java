@@ -33,10 +33,10 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import lombok.NonNull;
-import tr.alperenp.sec.idemef.xml.utils.ConstantAttributes;
-import tr.alperenp.sec.idemef.xml.utils.ConstantElementNames;
-import tr.alperenp.sec.idemef.xml.utils.IDMEFxmlUtils;
 import tr.alperenp.sec.idmef.model.idmefmessage.IDMEFMessage;
+import tr.alperenp.sec.idmef.xml.utils.ConstantAttributes;
+import tr.alperenp.sec.idmef.xml.utils.ConstantElementNames;
+import tr.alperenp.sec.idmef.xml.utils.IDMEFxmlUtils;
 
 /**
  * This class is responsible to parse xml IDMEF and create IDMEF object.

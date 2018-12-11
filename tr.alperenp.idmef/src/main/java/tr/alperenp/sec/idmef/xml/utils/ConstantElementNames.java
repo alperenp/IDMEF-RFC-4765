@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package tr.alperenp.sec.idemef.xml.utils;
+package tr.alperenp.sec.idmef.xml.utils;
 
 /**
- * Definition of Element names for xml de/serialization via reading {@link Properties}
+ * Definition of Element names for xml de/serialization via reading Properties
  * 
  * @author alperenp
  *

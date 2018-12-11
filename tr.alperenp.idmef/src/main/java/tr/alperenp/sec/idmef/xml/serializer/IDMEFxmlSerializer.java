@@ -36,12 +36,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import lombok.NonNull;
-import tr.alperenp.sec.idemef.xml.utils.ConstantAttributes;
-import tr.alperenp.sec.idemef.xml.utils.ConstantElementNames;
-import tr.alperenp.sec.idemef.xml.utils.IDMEFxmlUtils;
 import tr.alperenp.sec.idmef.model.alert.Alert;
 import tr.alperenp.sec.idmef.model.heartbeat.Heartbeat;
 import tr.alperenp.sec.idmef.model.idmefmessage.IDMEFMessage;
+import tr.alperenp.sec.idmef.xml.utils.ConstantAttributes;
+import tr.alperenp.sec.idmef.xml.utils.ConstantElementNames;
+import tr.alperenp.sec.idmef.xml.utils.IDMEFxmlUtils;
 
 /**
  * This class is responsible to serialize IDMEF object and create corresponding xml.
