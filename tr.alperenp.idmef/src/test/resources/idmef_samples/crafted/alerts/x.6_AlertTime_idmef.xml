@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<idmef:IDMEF-Message version="1.0"
+	xmlns:idmef="http://iana.org/idmef">
+	<idmef:Alert messageid="crafted01">
+		<idmef:CreateTime ntpstamp="0xbc71e980.0x00000000">
+			2018-11-20T12:40:50Z
+		</idmef:CreateTime>
+		<idmef:DetectTime ntpstamp="0xbc71e980.0x00000000">
+			2018-11-20T12:41:50Z
+		</idmef:DetectTime>
+		<idmef:AnalyzerTime ntpstamp="0xbc72423b.0x00000000">
+			2018-11-20T12:42:50Z
+		</idmef:AnalyzerTime>
+		
+		
+		<idmef:Source ident="crafted01-source1">
+			<idmef:Node ident="crafted01-source1-Node">
+				<idmef:Address ident="crafted01-source1-Node-Address" category="ipv4-addr">
+					<idmef:address>192.0.2.200</idmef:address>
+				</idmef:Address>
+			</idmef:Node>
+		</idmef:Source>
+		<idmef:Target ident="crafted01-target1">
+			<idmef:Node ident="crafted01-target1-Node" category="dns">
+				<idmef:name>www.example.com</idmef:name>
+				<idmef:Address ident="crafted01-target1-Node-Address" category="ipv4-addr">
+					<idmef:address>192.0.2.50</idmef:address>
+				</idmef:Address>
+			</idmef:Node>
+			<idmef:Service ident="crafted01-target1-Service">
+				<idmef:portlist>5-25,37,42,43,53,69-119,123-514
+				</idmef:portlist>
+			</idmef:Service>
+		</idmef:Target>
+	</idmef:Alert>
+</idmef:IDMEF-Message>

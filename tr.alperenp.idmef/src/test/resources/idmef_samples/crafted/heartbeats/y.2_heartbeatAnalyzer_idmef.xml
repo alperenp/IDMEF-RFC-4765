@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<idmef:IDMEF-Message version="1.0"
+  xmlns:idmef="http://iana.org/idmef">
+  <idmef:Heartbeat messageid="abc123456789">
+   <idmef:Analyzer analyzerid="hq-dmz-analyzer01" name="Ultimate Detector" manufacturer="awesome Co." model="1" version="1.1" class="software" ostype="Linux" osversion="2.6.32-100.28.5.el6.x86_64">
+     <idmef:Node category="dns">
+       <idmef:location>Headquarters DMZ Network</idmef:location>
+       <idmef:name>analyzer01.example.com</idmef:name>
+     </idmef:Node>
+       <idmef:Analyzer analyzerid="origin-analyzer" name="Original Detector">
+       <idmef:Node category="dns">
+         <idmef:location>Headquarters DMZ Network</idmef:location>
+         <idmef:name>analyzer01.example.com</idmef:name>
+       </idmef:Node>
+     </idmef:Analyzer>
+     <idmef:Process ident="analyzer-process-id">
+       <idmef:name>monitoring process</idmef:name>
+       <idmef:pid>8956</idmef:pid>
+       <idmef:path>usr/bin/monitor/me</idmef:path>
+       <idmef:arg>monitor</idmef:arg>
+       <idmef:env>VARIABLE=value</idmef:env>
+       <idmef:env>Another environment string</idmef:env>
+     </idmef:Process>
+   </idmef:Analyzer>
+   <idmef:CreateTime ntpstamp="0xbc722ebe.0x00000000">
+     2000-03-09T14:07:58Z
+   </idmef:CreateTime>
+   <idmef:HeartbeatInterval>10</idmef:HeartbeatInterval>
+   <idmef:AdditionalData type="real" meaning="%memused">
+     <idmef:real>62.5</idmef:real>
+   </idmef:AdditionalData>
+   <idmef:AdditionalData type="real" meaning="%diskused">
+     <idmef:real>87.1</idmef:real>
+   </idmef:AdditionalData>
+ </idmef:Heartbeat>
+</idmef:IDMEF-Message>

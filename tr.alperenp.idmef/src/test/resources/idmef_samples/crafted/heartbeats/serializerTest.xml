@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><idmef:IDMEF-Message xmlns:idmef="http://iana.org/idmef" version="1.0">
+    <idmef:Heartbeat messageid="abc123456789">
+        <idmef:Analyzer analyzerid="analyzer-id" class="analyzer-class" manufacturer="analyzer-manufacturer" model="analyzer-model" name="analyzer-name" ostype="analyzer-os-type" osversion="analyzer-os-version" version="analyzer-version">
+            <idmef:Node category="coda" ident="node-Identifier">
+                <idmef:location>node-location</idmef:location>
+                <idmef:name>node-name</idmef:name>
+                <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                    <idmef:address>addr-1</idmef:address>
+                    <idmef:netmask>addr1-netmask</idmef:netmask>
+                </idmef:Address>
+            </idmef:Node>
+            <idmef:Process ident="process-id">
+                <idmef:name>process-name</idmef:name>
+                <idmef:pid>44</idmef:pid>
+                <idmef:path>process-path</idmef:path>
+                <idmef:arg>arg-1</idmef:arg>
+                <idmef:arg>arg-2</idmef:arg>
+                <idmef:env>env-1</idmef:env>
+                <idmef:env>env-2</idmef:env>
+                <idmef:env>env-3</idmef:env>
+            </idmef:Process>
+            <idmef:Analyzer analyzerid="analyzer-id-2" class="analyzer-class-2" manufacturer="analyzer-manufacturer-2" model="analyzer-model-2" name="analyzer-name-2" ostype="analyzer-os-type-2" osversion="analyzer-os-version-2" version="analyzer-version-2">
+                <idmef:Node category="coda" ident="node-Identifier">
+                    <idmef:location>node-location</idmef:location>
+                    <idmef:name>node-name</idmef:name>
+                    <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                        <idmef:address>addr-1</idmef:address>
+                        <idmef:netmask>addr1-netmask</idmef:netmask>
+                    </idmef:Address>
+                </idmef:Node>
+                <idmef:Process ident="process-id">
+                    <idmef:name>process-name</idmef:name>
+                    <idmef:pid>44</idmef:pid>
+                    <idmef:path>process-path</idmef:path>
+                    <idmef:arg>arg-1</idmef:arg>
+                    <idmef:arg>arg-2</idmef:arg>
+                    <idmef:env>env-1</idmef:env>
+                    <idmef:env>env-2</idmef:env>
+                    <idmef:env>env-3</idmef:env>
+                </idmef:Process>
+            </idmef:Analyzer>
+        </idmef:Analyzer>
+        <idmef:CreateTime ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:CreateTime>
+        <idmef:HeartbeatInterval>7</idmef:HeartbeatInterval>
+        <idmef:AnalyzerTime ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663-02:00</idmef:AnalyzerTime>
+        <idmef:AdditionalData meaning="truth" type="boolean">
+            <idmef:boolean>true</idmef:boolean>
+        </idmef:AdditionalData>
+        <idmef:AdditionalData meaning="reality" type="real">
+            <idmef:real>3.14</idmef:real>
+            <idmef:real>1.1</idmef:real>
+        </idmef:AdditionalData>
+        <idmef:AdditionalData meaning="ports" type="portlist">
+            <idmef:portlist>3-15,19,29</idmef:portlist>
+            <idmef:portlist>80-8080</idmef:portlist>
+        </idmef:AdditionalData>
+    </idmef:Heartbeat>
+</idmef:IDMEF-Message>

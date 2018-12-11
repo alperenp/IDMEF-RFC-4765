@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<idmef:IDMEF-Message version="1.0"
+	xmlns:idmef="http://iana.org/idmef">
+	<idmef:Alert messageid="crafted02">
+		<idmef:Analyzer analyzerid="crafted02-a01">
+			<idmef:Node category="dns">
+				<idmef:name>correlator01.example.com</idmef:name>
+			</idmef:Node>
+		</idmef:Analyzer>
+		<idmef:CreateTime ntpstamp="0xbc72423b.0x00000000">
+			2018-11-20T12:55:48Z
+		</idmef:CreateTime>
+		<idmef:Source ident="crafted02-source1">
+			<idmef:Node ident="crafted02-source1-Node">
+				<idmef:Address ident="crafted02-source1-Node-Address" category="ipv4-addr">
+					<idmef:address>192.0.2.200</idmef:address>
+				</idmef:Address>
+			</idmef:Node>
+		</idmef:Source>
+		<idmef:Target ident="crafted02-target1">
+			<idmef:Node ident="crafted02-target1-Node" category="dns">
+				<idmef:name>www.example.com</idmef:name>
+				<idmef:Address ident="crafted02-target1-Node-Address" category="ipv4-addr">
+					<idmef:address>192.0.2.50</idmef:address>
+				</idmef:Address>
+			</idmef:Node>
+			<idmef:Service ident="crafted02-target1-Service">
+				<idmef:portlist>5-25,37,42
+				</idmef:portlist>
+			</idmef:Service>
+		</idmef:Target>   
+		<idmef:OverflowAlert>
+			<idmef:program>a/malicious/program.exe</idmef:program>
+			<idmef:size>1099511627776</idmef:size><!-- 1TB -->
+			<idmef:buffer>663da321787a517b132b</idmef:buffer>
+		</idmef:OverflowAlert>    
+	</idmef:Alert>
+</idmef:IDMEF-Message>

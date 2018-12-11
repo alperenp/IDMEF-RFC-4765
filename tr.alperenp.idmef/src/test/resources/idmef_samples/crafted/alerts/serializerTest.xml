@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><idmef:IDMEF-Message xmlns:idmef="http://iana.org/idmef" version="1.0">
+    <idmef:Alert>
+        <idmef:Analyzer analyzerid="analyzer-id" class="analyzer-class" manufacturer="analyzer-manufacturer" model="analyzer-model" name="analyzer-name" ostype="analyzer-os-type" osversion="analyzer-os-version" version="analyzer-version">
+            <idmef:Node category="coda" ident="node-Identifier">
+                <idmef:location>node-location</idmef:location>
+                <idmef:name>node-name</idmef:name>
+                <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                    <idmef:address>addr-1</idmef:address>
+                    <idmef:netmask>addr1-netmask</idmef:netmask>
+                </idmef:Address>
+            </idmef:Node>
+            <idmef:Process ident="process-id">
+                <idmef:name>process-name</idmef:name>
+                <idmef:pid>44</idmef:pid>
+                <idmef:path>process-path</idmef:path>
+                <idmef:arg>arg-1</idmef:arg>
+                <idmef:arg>arg-2</idmef:arg>
+                <idmef:env>env-1</idmef:env>
+                <idmef:env>env-2</idmef:env>
+                <idmef:env>env-3</idmef:env>
+            </idmef:Process>
+            <idmef:Analyzer analyzerid="analyzer-id-2" class="analyzer-class-2" manufacturer="analyzer-manufacturer-2" model="analyzer-model-2" name="analyzer-name-2" ostype="analyzer-os-type-2" osversion="analyzer-os-version-2" version="analyzer-version-2">
+                <idmef:Node category="coda" ident="node-Identifier">
+                    <idmef:location>node-location</idmef:location>
+                    <idmef:name>node-name</idmef:name>
+                    <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                        <idmef:address>addr-1</idmef:address>
+                        <idmef:netmask>addr1-netmask</idmef:netmask>
+                    </idmef:Address>
+                </idmef:Node>
+                <idmef:Process ident="process-id">
+                    <idmef:name>process-name</idmef:name>
+                    <idmef:pid>44</idmef:pid>
+                    <idmef:path>process-path</idmef:path>
+                    <idmef:arg>arg-1</idmef:arg>
+                    <idmef:arg>arg-2</idmef:arg>
+                    <idmef:env>env-1</idmef:env>
+                    <idmef:env>env-2</idmef:env>
+                    <idmef:env>env-3</idmef:env>
+                </idmef:Process>
+            </idmef:Analyzer>
+        </idmef:Analyzer>
+        <idmef:CreateTime ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:CreateTime>
+        <idmef:Classification ident="classification-ident" text="classification text">
+            <idmef:Reference meaning="Reference meaning" origin="vendor-specific">
+                <idmef:name>reference name</idmef:name>
+                <idmef:url>reference url here</idmef:url>
+            </idmef:Reference>
+            <idmef:Reference meaning="Reference meaning - 2" origin="unknown">
+                <idmef:name>reference name - 2</idmef:name>
+                <idmef:url>reference url here - 2</idmef:url>
+            </idmef:Reference>
+        </idmef:Classification>
+        <idmef:DetectTime ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:DetectTime>
+        <idmef:AnalyzerTime ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:AnalyzerTime>
+        <idmef:Source ident="src-1" interface="src-1 interface" spoofed="unknown">
+            <idmef:Node category="coda" ident="node-Identifier">
+                <idmef:location>node-location</idmef:location>
+                <idmef:name>node-name</idmef:name>
+                <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                    <idmef:address>addr-1</idmef:address>
+                    <idmef:netmask>addr1-netmask</idmef:netmask>
+                </idmef:Address>
+            </idmef:Node>
+            <idmef:Process ident="process-id">
+                <idmef:name>process-name</idmef:name>
+                <idmef:pid>44</idmef:pid>
+                <idmef:path>process-path</idmef:path>
+                <idmef:arg>arg-1</idmef:arg>
+                <idmef:arg>arg-2</idmef:arg>
+                <idmef:env>env-1</idmef:env>
+                <idmef:env>env-2</idmef:env>
+                <idmef:env>env-3</idmef:env>
+            </idmef:Process>
+        </idmef:Source>
+        <idmef:Source ident="src-2" interface="src-2 interface" spoofed="no">
+            <idmef:Node category="coda" ident="node-Identifier">
+                <idmef:location>node-location</idmef:location>
+                <idmef:name>node-name</idmef:name>
+                <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                    <idmef:address>addr-1</idmef:address>
+                    <idmef:netmask>addr1-netmask</idmef:netmask>
+                </idmef:Address>
+            </idmef:Node>
+            <idmef:User category="application" ident="application user">
+                <idmef:UserId ident="userid-1" tty="userid-1 tty" type="original-user">
+                    <idmef:name>userid-1 name</idmef:name>
+                    <idmef:number>9</idmef:number>
+                </idmef:UserId>
+                <idmef:UserId ident="userid-2" tty="userid-2 tty" type="target-user">
+                    <idmef:name>userid-2 name</idmef:name>
+                    <idmef:number>79</idmef:number>
+                </idmef:UserId>
+            </idmef:User>
+            <idmef:Service iana_protocol_name="iana protool name" iana_protocol_number="66" ip_version="4">
+                <idmef:name>service name</idmef:name>
+                <idmef:port>112</idmef:port>
+                <idmef:portlist>15,55-115</idmef:portlist>
+                <idmef:protocol>some protocol</idmef:protocol>
+            </idmef:Service>
+        </idmef:Source>
+        <idmef:Target decoy="yes" ident="target-1" interface="target-1 interface">
+            <idmef:Node category="coda" ident="node-Identifier">
+                <idmef:location>node-location</idmef:location>
+                <idmef:name>node-name</idmef:name>
+                <idmef:Address category="ipv4-addr" ident="addr-id" vlan-name="addr1-vlan_name" vlan-num="55">
+                    <idmef:address>addr-1</idmef:address>
+                    <idmef:netmask>addr1-netmask</idmef:netmask>
+                </idmef:Address>
+            </idmef:Node>
+            <idmef:User category="application" ident="application user">
+                <idmef:UserId ident="userid-1" tty="userid-1 tty" type="original-user">
+                    <idmef:name>userid-1 name</idmef:name>
+                    <idmef:number>9</idmef:number>
+                </idmef:UserId>
+                <idmef:UserId ident="userid-2" tty="userid-2 tty" type="target-user">
+                    <idmef:name>userid-2 name</idmef:name>
+                    <idmef:number>79</idmef:number>
+                </idmef:UserId>
+            </idmef:User>
+            <idmef:Process ident="process-id">
+                <idmef:name>process-name</idmef:name>
+                <idmef:pid>44</idmef:pid>
+                <idmef:path>process-path</idmef:path>
+                <idmef:arg>arg-1</idmef:arg>
+                <idmef:arg>arg-2</idmef:arg>
+                <idmef:env>env-1</idmef:env>
+                <idmef:env>env-2</idmef:env>
+                <idmef:env>env-3</idmef:env>
+            </idmef:Process>
+            <idmef:Service iana_protocol_name="iana protool name" iana_protocol_number="66" ip_version="4">
+                <idmef:name>service name</idmef:name>
+                <idmef:port>112</idmef:port>
+                <idmef:portlist>15,55-115</idmef:portlist>
+                <idmef:protocol>some protocol</idmef:protocol>
+            </idmef:Service>
+        </idmef:Target>
+        <idmef:Target decoy="yes" ident="target-2" interface="target-2 interface">
+            <idmef:User category="application" ident="application user">
+                <idmef:UserId ident="userid-1" tty="userid-1 tty" type="original-user">
+                    <idmef:name>userid-1 name</idmef:name>
+                    <idmef:number>9</idmef:number>
+                </idmef:UserId>
+                <idmef:UserId ident="userid-2" tty="userid-2 tty" type="target-user">
+                    <idmef:name>userid-2 name</idmef:name>
+                    <idmef:number>79</idmef:number>
+                </idmef:UserId>
+            </idmef:User>
+            <idmef:File category="current" file-type="file type" fstype="fstype" ident="file-1">
+                <idmef:name>file-1 name</idmef:name>
+                <idmef:path>file-1 path</idmef:path>
+                <idmef:create-time ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:create-time>
+                <idmef:modify-time ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:modify-time>
+                <idmef:access-time ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:access-time>
+                <idmef:data-size>8589934592</idmef:data-size>
+                <idmef:disk-size>8589934592000000</idmef:disk-size>
+                <idmef:FileAccess>
+                    <idmef:UserId ident="userid-1" tty="userid-1 tty" type="original-user">
+                        <idmef:name>userid-1 name</idmef:name>
+                        <idmef:number>9</idmef:number>
+                    </idmef:UserId>
+                </idmef:FileAccess>
+                <idmef:FileAccess>
+                    <idmef:permission perms="read"/>
+                    <idmef:permission perms="write"/>
+                    <idmef:permission perms="execute"/>
+                </idmef:FileAccess>
+                <idmef:Linkage category="reparse-point">
+                    <idmef:name>linkage name</idmef:name>
+                    <idmef:path>linkage path</idmef:path>
+                </idmef:Linkage>
+                <idmef:Linkage category="mount-point">
+                    <idmef:name>linkage name MOUNT</idmef:name>
+                    <idmef:path>linkage path MOUNT</idmef:path>
+                    <idmef:File ident="other file id">
+                        <idmef:name>other file</idmef:name>
+                    </idmef:File>
+                </idmef:Linkage>
+                <idmef:Inode>
+                    <idmef:change-time ntpstamp="0xbc722ebe.0x00000000">2018-12-04T14:47:43.663Z</idmef:change-time>
+                    <idmef:number>19</idmef:number>
+                    <idmef:major-device>3</idmef:major-device>
+                    <idmef:minor-device>4</idmef:minor-device>
+                    <idmef:c-major-device>1</idmef:c-major-device>
+                    <idmef:c-minor-device>2</idmef:c-minor-device>
+                </idmef:Inode>
+            </idmef:File>
+        </idmef:Target>
+        <idmef:Assessment>
+            <idmef:Impact completion="succeeded" severity="medium" type="user"/>
+            <idmef:Action category="block-installed">block action</idmef:Action>
+            <idmef:Action category="taken-offline">logoff action</idmef:Action>
+            <idmef:Confidence rating="low"/>
+        </idmef:Assessment>
+        <idmef:AdditionalData meaning="truth" type="boolean">
+            <idmef:boolean>true</idmef:boolean>
+        </idmef:AdditionalData>
+        <idmef:AdditionalData meaning="reality" type="real">
+            <idmef:real>3.14</idmef:real>
+            <idmef:real>1.1</idmef:real>
+        </idmef:AdditionalData>
+        <idmef:AdditionalData meaning="ports" type="portlist">
+            <idmef:portlist>3-15,19,29</idmef:portlist>
+            <idmef:portlist>80-8080</idmef:portlist>
+        </idmef:AdditionalData>
+    </idmef:Alert>
+</idmef:IDMEF-Message>
