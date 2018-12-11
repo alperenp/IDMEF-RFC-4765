@@ -19,7 +19,23 @@
 		<url>http://www.apache.org/licenses/LICENSE-2.0</url>
 		<distribution>repo</distribution>
 		</license>
-	</licenses>	
+	</licenses>
+	
+	<issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/alperenp/IDMEF-RFC-4765/issues</url>
+	</issueManagement>
+	
+	<scm>
+		<url>https://github.com/alperenp/IDMEF-RFC-4765</url>
+		<connection>
+			scm:git:git://github.com/alperenp/IDMEF-RFC-4765.git
+		</connection>
+		<developerConnection>
+			scm:git:ssh://github.com/alperenp/IDMEF-RFC-4765.git
+		</developerConnection>
+	</scm>
+
 	
 	<properties>
 		<java.version>10</java.version>
@@ -95,63 +111,23 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-					<id>sign-artifacts</id>
-					<phase>verify</phase>
-					<goals>
-						<goal>sign</goal>
-					</goals>
-					</execution>
-				</executions>
-			</plugin-->
 	   </plugins>	   
 	</build>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<layout>legacy</layout>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<layout>default</layout>
+		</repository>
+    </distributionManagement>
 
-	<profiles>
-		<!-- GPG Signature on release -->
-		<profile>
-			<id>release-sign-artifacts</id>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-		    </distributionManagement>
-			<activation>
-				<property>
-					<name>performRelease</name>
-					<value>true</value>
-				</property>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-							<id>sign-artifacts</id>
-							<phase>verify</phase>
-							<goals>
-								<goal>sign</goal>
-							</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+	
 	
 	
 	<dependencies>
