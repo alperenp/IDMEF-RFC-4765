@@ -7,12 +7,14 @@
 	<artifactId>tr.alperenp.sec.idmef.model</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<description>ACS IDMEF model implementation</description>
-	<url>https://github.com/rainerhahnekamp/superlib</url>
+	<url>https://github.com/alperenp/IDMEF-RFC-4765</url>
+	
 	<developers>
 		<developer>
 			<name>alperenp</name>
 		</developer>
 	</developers>
+	
 	<licenses>
 		<license>
 		<name>Apache 2.0 License</name>
